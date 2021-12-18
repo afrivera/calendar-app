@@ -84,6 +84,7 @@ export const startLogout = () => {
     return (dispatch) => {
 
         localStorage.clear();
+        dispatch( startLogout () );
         dispatch( logout() );
     }
 }
